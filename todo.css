@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    min-height: 300vh;
+    background: linear-gradient(160deg,#051639,#920eb4);
+    padding: 10px;
+}
+.todo{
+    width: 100%;
+    max-width: 800px;
+    background: #ff15;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    height: 750px;
+}
+.todo h2{
+    color: #000;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 40px;
+}
+i{
+    margin-left: 10px;
+    font-size: 65px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#edeef0 ;
+    border-radius: 18px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+    flex: 10;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 15px;
+    font-weight: 20px; 
+    font-size: 20px;
+}
+::placeholder{
+    color: #000;
+    font-weight: 500;
+}
+button{
+    border: none;
+    outline:none;
+    padding: 16px 50px;
+    background-color: rgb(103, 142, 45);
+    color: #fff;
+    font-size: 19px;
+    cursor: pointer;
+    border-radius: 18px;
+    transition: 0.5s;
+    box-shadow: 0 0 1rem rgb(103, 142, 45);
+    font-weight: bolder;
+}
+button:hover{
+    color:rgb(103, 142, 45);
+    background-color: #fff;
+    border: 2px solid rgb(103, 142, 45) ;
+}
+ul li{
+    list-style: none;
+    font-size: 25px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content:'';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 10px;
+    background-image: url('Resources/not.png');
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+    font-size: 25px;
+}
+ul li.checked{
+    color: #001;
+    text-decoration: line-through;
+    font-weight: bold;
+    font-size: 25px;
+}
+ul li.checked::before{
+    background-image: url('Resources/check.webp');
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height:40px ;
+    font-size:30px ;
+    color: #000;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    font-weight: bolder;
+}
+ul li span:hover{
+    background: red;
+}
+
